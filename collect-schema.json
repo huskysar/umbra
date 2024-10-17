@@ -1,0 +1,532 @@
+{
+    "title": "Umbra Collect Metadata Schema v1.1.0",
+    "description": "CHANGELOG\n\nAdded:\n    - sceneSizeKm to CollectMetadataProperties",
+    "type": "object",
+    "properties": {
+        "version": {
+            "title": "Version",
+            "description": "The version for this metadata file. Retrieve JSON schema via the Canopy API. Version string respects Semantic Versioning.",
+            "enum": [
+                "1.1.0"
+            ],
+            "type": "string"
+        },
+        "vendor": {
+            "title": "Vendor",
+            "description": "The vendor for this Collect. Will always be set to Umbra Space.",
+            "enum": [
+                "Umbra Space"
+            ],
+            "type": "string"
+        },
+        "imagingMode": {
+            "title": "Imaging Mode",
+            "allOf": [
+                {
+                    "$ref": "#/definitions/ImagingMode"
+                }
+            ]
+        },
+        "orderType": {
+            "title": "Order Type",
+            "allOf": [
+                {
+                    "$ref": "#/definitions/OrderType"
+                }
+            ]
+        },
+        "productSku": {
+            "title": "Product SKU",
+            "description": "A unique string representing the delivered Umbra product for this collect.",
+            "type": "string"
+        },
+        "baseIpr": {
+            "title": "Base IPR",
+            "description": "The requested ground plane IPR from the upstream Task request for the raw collect data. The actual resolution of derived products may differ.",
+            "type": "number"
+        },
+        "targetIpr": {
+            "title": "Target IPR",
+            "description": "The requested ground plane IPR for derived products. It may differ from Base IPR.",
+            "type": "number"
+        },
+        "umbraSatelliteName": {
+            "title": "Umbra Sat Name",
+            "description": "Unique string representing the satellite that performed this Collect.",
+            "type": "string"
+        },
+        "collects": {
+            "title": "Collects",
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/CollectMetadataProperties_v1_1_0"
+            }
+        },
+        "derivedProducts": {
+            "$ref": "#/definitions/DerivedProducts_v1_0_0"
+        }
+    },
+    "required": [
+        "version",
+        "vendor",
+        "imagingMode",
+        "orderType",
+        "productSku",
+        "baseIpr",
+        "targetIpr",
+        "umbraSatelliteName",
+        "collects",
+        "derivedProducts"
+    ],
+    "definitions": {
+        "ImagingMode": {
+            "title": "ImagingMode",
+            "description": "An enumeration.",
+            "enum": [
+                "SPOTLIGHT"
+            ],
+            "type": "string"
+        },
+        "OrderType": {
+            "title": "OrderType",
+            "description": "An enumeration.",
+            "enum": [
+                "SNAPSHOT"
+            ],
+            "type": "string"
+        },
+        "RadarBand": {
+            "title": "RadarBand",
+            "description": "An enumeration.",
+            "enum": [
+                "X"
+            ],
+            "type": "string"
+        },
+        "PolarizationEnum": {
+            "title": "PolarizationEnum",
+            "description": "An enumeration.",
+            "enum": [
+                "VV",
+                "HH"
+            ],
+            "type": "string"
+        },
+        "SatelliteTrack": {
+            "title": "SatelliteTrack",
+            "description": "An enumeration.",
+            "enum": [
+                "ASCENDING",
+                "DESCENDING"
+            ],
+            "type": "string"
+        },
+        "ObservationDirection": {
+            "title": "ObservationDirection",
+            "description": "An enumeration.",
+            "enum": [
+                "LEFT",
+                "RIGHT"
+            ],
+            "type": "string"
+        },
+        "Point": {
+            "title": "Point",
+            "description": "Point Model",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "title": "Type",
+                    "default": "Point",
+                    "const": "Point",
+                    "type": "string"
+                },
+                "coordinates": {
+                    "title": "Coordinates",
+                    "anyOf": [
+                        {
+                            "type": "array",
+                            "minItems": 2,
+                            "maxItems": 2,
+                            "items": [
+                                {
+                                    "type": "number"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "array",
+                            "minItems": 3,
+                            "maxItems": 3,
+                            "items": [
+                                {
+                                    "type": "number"
+                                },
+                                {
+                                    "type": "number"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "coordinates"
+            ]
+        },
+        "Polygon": {
+            "title": "Polygon",
+            "description": "Polygon Model",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "title": "Type",
+                    "default": "Polygon",
+                    "const": "Polygon",
+                    "type": "string"
+                },
+                "coordinates": {
+                    "title": "Coordinates",
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "anyOf": [
+                                {
+                                    "type": "array",
+                                    "minItems": 2,
+                                    "maxItems": 2,
+                                    "items": [
+                                        {
+                                            "type": "number"
+                                        },
+                                        {
+                                            "type": "number"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "array",
+                                    "minItems": 3,
+                                    "maxItems": 3,
+                                    "items": [
+                                        {
+                                            "type": "number"
+                                        },
+                                        {
+                                            "type": "number"
+                                        },
+                                        {
+                                            "type": "number"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "minItems": 4
+                    }
+                }
+            },
+            "required": [
+                "coordinates"
+            ]
+        },
+        "Resolution2D": {
+            "title": "Resolution",
+            "description": "Resolution in meters in both the range and azimuth directions",
+            "type": "object",
+            "properties": {
+                "azimuthMeters": {
+                    "title": "Azimuth Resolution in Meters",
+                    "type": "number"
+                },
+                "rangeMeters": {
+                    "title": "Range Resolution in Meters",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "azimuthMeters",
+                "rangeMeters"
+            ]
+        },
+        "SceneSize": {
+            "title": "SceneSize",
+            "description": "An enumeration.",
+            "enum": [
+                "4x4_KM",
+                "5x5_KM",
+                "5x10_KM",
+                "8x8_KM",
+                "10x10_KM"
+            ],
+            "type": "string"
+        },
+        "CollectMetadataProperties_v1_1_0": {
+            "title": "CollectMetadataProperties_v1_1_0",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "title": "Umbra Collect ID",
+                    "description": "The unique UUIDv4 for this Collect.",
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "taskId": {
+                    "title": "Umbra Task ID",
+                    "description": "The unique UUIDv4 for the Task associated with this Collect",
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "revisitId": {
+                    "title": "Umbra Revisit ID",
+                    "description": "The unique UUIDv4 for the Revisit associated with this Task and Collect, if any.",
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "startAtUTC": {
+                    "title": "Start At Timestamp",
+                    "description": "An ISO8601 timestamp representing the time at which the Collect began.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "endAtUTC": {
+                    "title": "End At Timestamp",
+                    "description": "An ISO8601 timestamp representing the time at which the Collect ended.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "radarBand": {
+                    "title": "Radar Band",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/RadarBand"
+                        }
+                    ]
+                },
+                "radarCenterFrequencyHz": {
+                    "title": "Radar Center Frequency in Hertz",
+                    "type": "number"
+                },
+                "polarizations": {
+                    "title": "Polarizations",
+                    "description": "The radar polarizations for this Collect. An empty list indicates no polarization value for the Collect",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/PolarizationEnum"
+                    }
+                },
+                "angleAzimuthDegrees": {
+                    "title": "Azimuth Angle in Degrees",
+                    "type": "number"
+                },
+                "angleGrazingDegrees": {
+                    "title": "Grazing Angle in Degrees",
+                    "type": "number"
+                },
+                "angleIncidenceDegrees": {
+                    "title": "Incidence Angle in Degrees",
+                    "type": "number"
+                },
+                "angleSquintDegrees": {
+                    "title": "Squint Angle in Degrees",
+                    "type": "number"
+                },
+                "slantRangeMeters": {
+                    "title": "Slant Range in Meters",
+                    "description": "The shortest path distance between the satellite and ground target at the time of the Collect.",
+                    "type": "number"
+                },
+                "antennaGainDb": {
+                    "title": "Satellite Antenna Gain in Decibels",
+                    "type": "number"
+                },
+                "satelliteTrack": {
+                    "title": "Satellite Track",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/SatelliteTrack"
+                        }
+                    ]
+                },
+                "observationDirection": {
+                    "title": "Observation Direction",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/ObservationDirection"
+                        }
+                    ]
+                },
+                "timeOfCenterOfAperturePolynomial": {
+                    "title": "Time of COA Polynomial",
+                    "description": "JSON Dictionary that defines the polynomial. See sarpy.io.complex.sicd_elements.blocks.Poly2DType for details.",
+                    "type": "object"
+                },
+                "sceneCenterPointLla": {
+                    "title": "Scene Center Point in LLA Coordinates",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/Point"
+                        }
+                    ]
+                },
+                "footprintPolygonLla": {
+                    "title": "Collect Footprint Polygon in LLA Coordinates",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/Polygon"
+                        }
+                    ]
+                },
+                "maxGroundResolution": {
+                    "title": "Max Possible Ground Resolution",
+                    "description": "The best possible ground resolution derived from the raw Collect data.",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/Resolution2D"
+                        }
+                    ]
+                },
+                "sceneSize": {
+                    "title": "Requested SceneSize for the Collect in Sq Km",
+                    "description": "SceneSize enum representing requested scene size on the associated Task. The first value is the scene width in the azimuth direction. The second value is the scene width in the range direction.",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/SceneSize"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "id",
+                "taskId",
+                "startAtUTC",
+                "endAtUTC",
+                "radarBand",
+                "radarCenterFrequencyHz",
+                "polarizations",
+                "angleAzimuthDegrees",
+                "angleGrazingDegrees",
+                "angleIncidenceDegrees",
+                "angleSquintDegrees",
+                "slantRangeMeters",
+                "antennaGainDb",
+                "satelliteTrack",
+                "observationDirection",
+                "timeOfCenterOfAperturePolynomial",
+                "sceneCenterPointLla",
+                "footprintPolygonLla",
+                "maxGroundResolution",
+                "sceneSize"
+            ]
+        },
+        "Looks": {
+            "title": "Looks",
+            "type": "object",
+            "properties": {
+                "azimuth": {
+                    "title": "Azimuth Looks",
+                    "type": "number"
+                },
+                "range": {
+                    "title": "Range Looks",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "azimuth",
+                "range"
+            ]
+        },
+        "GecProduct_v1_0_0": {
+            "title": "GEC (Geocoded Ellipsoid Corrected) Derived Product",
+            "type": "object",
+            "properties": {
+                "numRows": {
+                    "title": "Number of rows in product",
+                    "type": "integer"
+                },
+                "numColumns": {
+                    "title": "Number of columns in product",
+                    "type": "integer"
+                },
+                "groundResolution": {
+                    "$ref": "#/definitions/Resolution2D"
+                },
+                "looks": {
+                    "$ref": "#/definitions/Looks"
+                }
+            },
+            "required": [
+                "numRows",
+                "numColumns",
+                "groundResolution",
+                "looks"
+            ]
+        },
+        "SicdProduct_v1_0_0": {
+            "title": "SICD Derived Product",
+            "type": "object",
+            "properties": {
+                "numRows": {
+                    "title": "Number of rows in product",
+                    "type": "integer"
+                },
+                "numColumns": {
+                    "title": "Number of columns in product",
+                    "type": "integer"
+                },
+                "groundResolution": {
+                    "$ref": "#/definitions/Resolution2D"
+                },
+                "slantResolution": {
+                    "$ref": "#/definitions/Resolution2D"
+                },
+                "apertureReferencePointPolynomial": {
+                    "title": "ARP Polynomial",
+                    "description": "JSON Dictionary that defines the ARP polynomial. See sarpy.io.complex.sicd_elements.blocks.XYZPolyType for details.",
+                    "type": "object"
+                }
+            },
+            "required": [
+                "numRows",
+                "numColumns",
+                "groundResolution",
+                "slantResolution",
+                "apertureReferencePointPolynomial"
+            ]
+        },
+        "DerivedProducts_v1_0_0": {
+            "title": "Derived Product Metadata",
+            "description": "Additional Metadata specific to derived products delivered for this Collect.",
+            "type": "object",
+            "properties": {
+                "GEC": {
+                    "title": "Gec",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/GecProduct_v1_0_0"
+                    }
+                },
+                "SICD": {
+                    "title": "Sicd",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/SicdProduct_v1_0_0"
+                    }
+                }
+            },
+            "required": [
+                "GEC",
+                "SICD"
+            ]
+        }
+    }
+}

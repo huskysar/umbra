@@ -1,0 +1,26 @@
+[project]
+authors = [{name = "Scott Henderson", email = "scottyhq@gmail.com"}]
+dependencies = ["spacetrack>=1.3.1,<2"]
+description = "Add a short description here"
+name = "umbra"
+requires-python = ">= 3.11"
+version = "0.1.0"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["osx-arm64"]
+
+[tool.pixi.pypi-dependencies]
+umbra = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+
+[tool.pixi.dependencies]
+pystac-client = ">=0.8.4,<0.9"
+ipykernel = ">=6.29.5,<7"
+geopandas = ">=1.0.1,<2"
+matplotlib-base = ">=3.9.2,<4"
