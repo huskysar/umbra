@@ -1,14 +1,19 @@
-# umbra
+# UMBRA
 
-Code related to NASA CSDAP Umbra Project
+Code related to NASA CSDAP [Umbra Space](https://umbra.space) evaluation 
 
 ## environment management
 
-We use pixi.sh to manage the Python environment required to execute code and notebooks in this repository:
+We recommend using [pixi.sh](https://pixi.sh/latest/) to manage the Python environment required to execute code and notebooks in this repository
 
 ```
 cd umbra
 pixi install
+```
+
+Alternatively you can use conda/mamba:
+```
+conda env create -f environment.yml
 ```
 
 ## authentication

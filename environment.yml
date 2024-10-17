@@ -1,0 +1,13 @@
+name: umbra
+channels:
+- conda-forge
+- nodefaults
+dependencies:
+- pystac-client >=0.8.4,<0.9
+- ipykernel >=6.29.5,<7
+- geopandas >=1.0.1,<2
+- matplotlib-base >=3.9.2,<4
+- python >=3.11
+- pip
+- pip:
+  - spacetrack>=1.3.1, <2
