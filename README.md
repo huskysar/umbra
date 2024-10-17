@@ -2,6 +2,11 @@
 
 Code related to NASA CSDAP [Umbra Space](https://umbra.space) evaluation 
 
+## rendered notebooks
+
+1. [Public Archive Search](https://nbviewer.org/github/huskysar/umbra/blob/main/notebooks/public-archive-search.ipynb)
+1. [Space-track Orbits](https://nbviewer.org/github/huskysar/umbra/blob/main/notebooks/spacetrack.ipynb)
+
 ## environment management
 
 We recommend using [pixi.sh](https://pixi.sh/latest/) to manage the Python environment required to execute code and notebooks in this repository
