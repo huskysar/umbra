@@ -5,6 +5,7 @@ Code related to NASA CSDAP [Umbra Space](https://umbra.space) evaluation
 ## rendered notebooks
 
 1. [Public Archive Search](https://nbviewer.org/github/huskysar/umbra/blob/main/notebooks/public-archive-search.ipynb)
+1. [Basic Task Submission](https://nbviewer.org/github/huskysar/umbra/blob/main/notebooks/basic-task.ipynb)
 1. [Space-track Orbits](https://nbviewer.org/github/huskysar/umbra/blob/main/notebooks/spacetrack.ipynb)
 
 ## environment management
