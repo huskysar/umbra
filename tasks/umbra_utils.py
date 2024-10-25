@@ -41,10 +41,6 @@ acquisition_025_1= {
 
 def plot_feasibilities_polar(df, incidence_range='auto', satnames=False):
     ''' incidence_range = None (auto) 'full' or 'squeeze' '''
-    df['targetAzimuthAngle'] = (df['targetAzimuthAngleEndDegrees'] - df['targetAzimuthAngleStartDegrees'])/2 + df['targetAzimuthAngleStartDegrees']
-    df['grazingAngle'] = (df['grazingAngleEndDegrees'] - df['grazingAngleStartDegrees'])/2 + df['grazingAngleStartDegrees']
-    df['squintAngleEngineering'] = (df['squintAngleEngineeringDegreesEnd'] - df['squintAngleEngineeringDegreesStart'])/2 + df['squintAngleEngineeringDegreesStart']
-
     # Quick plot of acquisition geometries 
     theta = np.deg2rad(df['targetAzimuthAngle'])
     radii = 90-df['grazingAngle'] #incidence angle
@@ -114,30 +110,62 @@ def plot_feasibilities_polar(df, incidence_range='auto', satnames=False):
     return ax
 
 
-def plot_feasibilities_timeseries(df):
+def plot_feasibilities_squint(df):
     ''' incidence_range = None (auto) 'full' or 'squeeze' '''
     viz = df.sort_values(by='satelliteId')
     viz['windowStartAt'] = pd.to_datetime(viz['windowStartAt'])
 
-    viz['view:incidence_angle'] = 90-(df['grazingAngleEndDegrees'] - df['grazingAngleStartDegrees'])/2 + df['grazingAngleStartDegrees']
-
     fig, ax = plt.subplots(figsize=(12,4))
-    #plt.scatter(x=viz['windowStartAt'], y=viz['targetAzimuthAngleStartDegrees'], c=viz['squintAngleStartDegrees'],cmap='bwr', ec='k', alpha=0.5)
     markers = ['o', '^', 'd', 's']
     for name,group in viz.groupby('satelliteId'):
-        plt.scatter(x=group['windowStartAt'], y=group['targetAzimuthAngleStartDegrees'], c=group['squintAngleStartDegrees'],
+        plt.scatter(x=group['windowStartAt'], y=group['targetAzimuthAngle'], c=group['squintAngleEngineering'],
                     marker=markers.pop(),
+                    s=100,
+                    alpha=0.8,
                     label=name,
+                    vmin=-90,
+                    vmax=90,
                     cmap='bwr', ec='k')
 
     cb = plt.colorbar();
-    cb.set_label('squintAngleStartDegrees')
-    plt.ylabel('targetAzimuthAngleStartDegrees')
+    cb.set_label('squintAngleEngineering')
+
+    plt.ylabel('view:azimuth')
     plt.axhline(180, color='k', linestyle='--', linewidth=0.5)
     plt.axhline(90, color='k', linestyle='--', linewidth=0.5)
     plt.axhline(270, color='k', linestyle='--', linewidth=0.5)
     plt.legend()
     titlestr = f'{len(df)} Feasible Acquisitions\n{df['windowStartAt'].min().rstrip('+00:00')} to {df['windowEndAt'].max().rstrip('+00:00')}'
     plt.title(titlestr);
+
+    return ax
+
+
+def plot_feasibilities_incidence(df):
+    ''' incidence_range = None (auto) 'full' or 'squeeze' '''
+    viz = df.sort_values(by='satelliteId')
+    viz['windowStartAt'] = pd.to_datetime(viz['windowStartAt'])
+
+    fig, ax = plt.subplots(figsize=(12,4))
+    #plt.scatter(x=viz['windowStartAt'], y=viz['targetAzimuthAngle'], s=100, alpha=0.8, c=viz['incidenceAngle'],cmap='viridis', ec='k')
+    markers = ['o', '^', 'd', 's']
+    for name,group in viz.groupby('satelliteId'):
+        plt.scatter(x=group['windowStartAt'], y=group['targetAzimuthAngle'], c=group['incidenceAngle'],
+                    marker=markers.pop(),
+                    s=100,
+                    alpha=0.8,
+                    label=name,
+                    cmap='viridis', ec='k')
+
+    cb = plt.colorbar();
+    cb.set_label('view:incidence')
+
+    plt.ylabel('view:azimuth')
+    plt.axhline(180, color='k', linestyle='--', linewidth=0.5)
+    plt.axhline(90, color='k', linestyle='--', linewidth=0.5)
+    plt.axhline(270, color='k', linestyle='--', linewidth=0.5)
+    titlestr = f'{len(df)} Feasible Acquisitions\n{df['windowStartAt'].min().rstrip('+00:00')} to {df['windowEndAt'].max().rstrip('+00:00')}'
+    plt.title(titlestr)
+    plt.legend()
 
     return ax
