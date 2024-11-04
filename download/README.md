@@ -1,8 +1,9 @@
 # Downloading Umbra orders
 
 Requires an environment with `pystac-client` and `stac-asset`
-https://pystac-client.readthedocs.io/en/stable/quickstart.html#cli
-https://github.com/stac-utils/stac-asset?tab=readme-ov-file#cli
+
+- https://pystac-client.readthedocs.io/en/stable/quickstart.html#cli
+- https://github.com/stac-utils/stac-asset?tab=readme-ov-file#cli
 
 
 ## Check endpoint & auth
