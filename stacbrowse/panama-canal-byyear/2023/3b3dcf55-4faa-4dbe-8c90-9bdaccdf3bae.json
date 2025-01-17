@@ -1,0 +1,118 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json"
+  ],
+  "id": "3b3dcf55-4faa-4dbe-8c90-9bdaccdf3bae",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -79.57739090955529,
+          8.998931524656262,
+          0.0
+        ],
+        [
+          -79.6067923629983,
+          8.977635960686603,
+          0.0
+        ],
+        [
+          -79.58537404115154,
+          8.948404798477293,
+          0.0
+        ],
+        [
+          -79.55597369215415,
+          8.96969869163441,
+          0.0
+        ],
+        [
+          -79.57739090955529,
+          8.998931524656262,
+          0.0
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -79.6067923629983,
+    8.948404798477293,
+    -79.55597369215415,
+    8.998931524656262
+  ],
+  "properties": {
+    "platform": "Umbra-04",
+    "sar:frequency_band": "X",
+    "sar:instrument_mode": "SPOTLIGHT",
+    "sar:looks_azimuth": 1,
+    "sar:polarizations": [
+      "VV"
+    ],
+    "sar:product_type": "GEC",
+    "sar:resolution_azimuth": 0.5,
+    "sar:resolution_range": 0.5,
+    "umbra:collect_ids": [
+      "eb01a50d-f701-46b2-9193-67d2e05d539f"
+    ],
+    "umbra:grazing_angle_degrees": 67.80812072753906,
+    "umbra:open-data-catalog": true,
+    "umbra:slant_range_kilometers": 556.8675537109375,
+    "umbra:squint_angle_degrees": 135.64463806152344,
+    "umbra:squint_angle_degrees_off_broadside": 44.35536193847656,
+    "umbra:squint_angle_engineering_degrees": -45.64463806152344,
+    "umbra:squint_angle_exploitation_degrees": 44.35536193847656,
+    "umbra:target_azimuth_angle_degrees": 325.69610595703125,
+    "umbra:task_id": "ad0219ae-eb9b-4730-8cf6-005a72818db7",
+    "view:incidence_angle": 22.191879272460938,
+    "start_datetime": "2023-07-15T14:59:02.000000Z",
+    "created": null,
+    "datetime": null,
+    "updated": null,
+    "end_datetime": "2023-07-15T14:59:04.290508Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "gec": {
+      "href": "s3://umbra-open-data-catalog/sar-data/tasks/Panama Canal, Panama/ad0219ae-eb9b-4730-8cf6-005a72818db7/2023-07-15-14-59-32_UMBRA-04/2023-07-15-14-59-32_UMBRA-04_GEC.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "TIFF",
+      "description": "MONOSTATIC TIFF",
+      "roles": [
+        "data"
+      ]
+    },
+    "metadata": {
+      "href": "s3://umbra-open-data-catalog/sar-data/tasks/Panama Canal, Panama/ad0219ae-eb9b-4730-8cf6-005a72818db7/2023-07-15-14-59-32_UMBRA-04/2023-07-15-14-59-32_UMBRA-04_METADATA.json",
+      "type": "application/json",
+      "title": "METADATA",
+      "description": "MONOSTATIC METADATA",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "sicd": {
+      "href": "s3://umbra-open-data-catalog/sar-data/tasks/Panama Canal, Panama/ad0219ae-eb9b-4730-8cf6-005a72818db7/2023-07-15-14-59-32_UMBRA-04/2023-07-15-14-59-32_UMBRA-04_SICD.nitf",
+      "type": "application/octet-stream",
+      "title": "SICD",
+      "description": "MONOSTATIC SICD",
+      "roles": [
+        "data"
+      ]
+    }
+  }
+}
