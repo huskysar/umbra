@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "North America",
+"features": [
+{ "type": "Feature", "properties": { "scenes": 112, "summary": "[{(0.16, 'VV'): 1, (0.5, 'VV'): 111}]", "start": "2023-02-01T02:17:08.851006+00:00", "end": "2025-01-13T03:36:34.218407+00:00" }, "geometry": { "type": "Point", "coordinates": [ -112.146082505769442, 40.522382784111358 ] } },
+{ "type": "Feature", "properties": { "scenes": 115, "summary": "[{(0.35, 'VV'): 115}]", "start": "2023-02-01T02:17:08.851006+00:00", "end": "2025-01-13T03:36:34.218407+00:00" }, "geometry": { "type": "Point", "coordinates": [ -96.432739428165661, 30.536686133632713 ] } },
+{ "type": "Feature", "properties": { "scenes": 120, "summary": "[{(0.5, 'VV'): 120}]", "start": "2023-02-01T02:17:08.851006+00:00", "end": "2025-01-13T03:36:34.218407+00:00" }, "geometry": { "type": "Point", "coordinates": [ -121.784796668457858, 38.532298299469375 ] } },
+{ "type": "Feature", "properties": { "scenes": 127, "summary": "[{(0.25, 'VV'): 1, (1.0, 'VV'): 126}]", "start": "2023-02-01T02:17:08.851006+00:00", "end": "2025-01-13T03:36:34.218407+00:00" }, "geometry": { "type": "Point", "coordinates": [ -86.998399086622058, 40.485800377147811 ] } },
+{ "type": "Feature", "properties": { "scenes": 130, "summary": "[{(1.0, 'VV'): 130}]", "start": "2023-02-01T02:17:08.851006+00:00", "end": "2025-01-13T03:36:34.218407+00:00" }, "geometry": { "type": "Point", "coordinates": [ -96.828772715722067, 46.904348782346474 ] } },
+{ "type": "Feature", "properties": { "scenes": 138, "summary": "[{(0.5, 'VV'): 138}]", "start": "2023-02-01T02:17:08.851006+00:00", "end": "2025-01-13T03:36:34.218407+00:00" }, "geometry": { "type": "Point", "coordinates": [ -93.71399609196591, 41.684502309021973 ] } },
+{ "type": "Feature", "properties": { "scenes": 149, "summary": "[{(0.5, 'VV'): 149}]", "start": "2023-02-01T02:17:08.851006+00:00", "end": "2025-01-13T03:36:34.218407+00:00" }, "geometry": { "type": "Point", "coordinates": [ -119.721700834738371, 37.946498703596532 ] } },
+{ "type": "Feature", "properties": { "scenes": 163, "summary": "[{(0.25, 'HH'): 5, (0.25, 'VV'): 7, (0.35, 'VV'): 21, (0.5, 'HH'): 13, (0.5, 'VV'): 36, (1.0, 'HH'): 16, (1.0, 'VV'): 65}]", "start": "2023-02-01T02:17:08.851006+00:00", "end": "2025-01-13T03:36:34.218407+00:00" }, "geometry": { "type": "Point", "coordinates": [ -111.820003754636744, 39.079997452705285 ] } },
+{ "type": "Feature", "properties": { "scenes": 194, "summary": "[{(0.25, 'VV'): 2, (0.5, 'VV'): 192}]", "start": "2023-02-01T02:17:08.851006+00:00", "end": "2025-01-13T03:36:34.218407+00:00" }, "geometry": { "type": "Point", "coordinates": [ -79.581383507952935, 8.973666971816277 ] } }
+]
+}
