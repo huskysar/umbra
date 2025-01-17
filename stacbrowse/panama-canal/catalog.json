@@ -1,0 +1,943 @@
+{
+  "type": "Catalog",
+  "id": "panama-canal",
+  "stac_version": "1.0.0",
+  "description": "Umbra Open SAR Data over Panama Canal",
+  "links": [
+    {
+      "rel": "root",
+      "href": "./catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./015fc551-3e2f-4ba4-9069-b9b091601e05/015fc551-3e2f-4ba4-9069-b9b091601e05.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./23910fdd-69f0-401d-8c84-eea9272cda2d/23910fdd-69f0-401d-8c84-eea9272cda2d.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./40e39634-c0f3-4907-bb4e-208d8c644cfe/40e39634-c0f3-4907-bb4e-208d8c644cfe.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./52f2317f-091b-4f90-b385-08c93655e089/52f2317f-091b-4f90-b385-08c93655e089.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./0145c27a-03e7-42a7-9439-ba02246f5a3d/0145c27a-03e7-42a7-9439-ba02246f5a3d.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./e9b8600e-be2b-411a-a9ab-5460890f41c8/e9b8600e-be2b-411a-a9ab-5460890f41c8.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./9b978b70-bde9-4c5e-85b0-6246733574a9/9b978b70-bde9-4c5e-85b0-6246733574a9.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./6d08b063-ece2-4668-8848-5de4409c777a/6d08b063-ece2-4668-8848-5de4409c777a.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./5f4f124a-f8b7-4ebe-b064-b717a805c460/5f4f124a-f8b7-4ebe-b064-b717a805c460.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./caa3f604-e657-4e8b-a8bf-49b010a08ee8/caa3f604-e657-4e8b-a8bf-49b010a08ee8.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./46b38251-bf82-4e0f-ae83-d30dd61c0007/46b38251-bf82-4e0f-ae83-d30dd61c0007.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./5ab9bbf0-45a9-4031-b209-4c600abc7566/5ab9bbf0-45a9-4031-b209-4c600abc7566.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./b94b7992-5ada-4096-ab38-69b341cdbc54/b94b7992-5ada-4096-ab38-69b341cdbc54.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./a0c2253c-0fd7-47a8-9f05-a34d9fe2c6c0/a0c2253c-0fd7-47a8-9f05-a34d9fe2c6c0.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./a20a6eeb-6314-40c3-9b68-4a7ad80380b4/a20a6eeb-6314-40c3-9b68-4a7ad80380b4.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./382d4ee3-4041-4a00-b6d5-f04b0aa8af92/382d4ee3-4041-4a00-b6d5-f04b0aa8af92.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./2b83e2bf-c02b-4337-a658-4b2a74613895/2b83e2bf-c02b-4337-a658-4b2a74613895.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./41f9dad9-4718-4a86-916d-0eb2a2a77780/41f9dad9-4718-4a86-916d-0eb2a2a77780.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./3b3cfb3d-b650-4124-b9aa-fdc62ca78a8b/3b3cfb3d-b650-4124-b9aa-fdc62ca78a8b.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ff854a4f-b2b2-424f-9264-e197bc9eb4c8/ff854a4f-b2b2-424f-9264-e197bc9eb4c8.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./f1d7efdd-0da2-4d4b-a1be-d8bdb3ada65a/f1d7efdd-0da2-4d4b-a1be-d8bdb3ada65a.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./7454256b-f975-44f5-bc13-233f61c1f886/7454256b-f975-44f5-bc13-233f61c1f886.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./e29e6b4f-4b3e-49c2-a257-9ff895fe61de/e29e6b4f-4b3e-49c2-a257-9ff895fe61de.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./df3951f0-fe96-4af3-b74b-96cb4a5302f2/df3951f0-fe96-4af3-b74b-96cb4a5302f2.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./8a558e1e-6fb6-49a1-9a73-28f2ea4e88e5/8a558e1e-6fb6-49a1-9a73-28f2ea4e88e5.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./d435398f-892a-4e94-bc1b-54e2711441d8/d435398f-892a-4e94-bc1b-54e2711441d8.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./7238e891-8f95-4c66-a9c7-7f37142a1102/7238e891-8f95-4c66-a9c7-7f37142a1102.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./aa973e00-99a0-4451-b642-be0ee595c51c/aa973e00-99a0-4451-b642-be0ee595c51c.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./61f4ec2e-50d0-47c7-bd23-3e02f759dd86/61f4ec2e-50d0-47c7-bd23-3e02f759dd86.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ece3f45b-ca4f-456c-9097-6218803ac1d1/ece3f45b-ca4f-456c-9097-6218803ac1d1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./9d9e7b17-a82f-4954-b021-85c4d71f27c2/9d9e7b17-a82f-4954-b021-85c4d71f27c2.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./959596b2-08e8-4d5d-9c0c-a8f32f915af9/959596b2-08e8-4d5d-9c0c-a8f32f915af9.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./b04829bb-be5d-4f62-842b-3ed97d5e38f5/b04829bb-be5d-4f62-842b-3ed97d5e38f5.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./2813b659-d30e-4884-a44e-b52ca052abe4/2813b659-d30e-4884-a44e-b52ca052abe4.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./8737d101-de5a-42d3-a647-faad93d4ebe9/8737d101-de5a-42d3-a647-faad93d4ebe9.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./69724ed5-0d8b-4b7b-9281-bf4ffa71a87e/69724ed5-0d8b-4b7b-9281-bf4ffa71a87e.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./9209071c-ba64-41b2-a8be-b3b299e2ef0f/9209071c-ba64-41b2-a8be-b3b299e2ef0f.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./7d0a749c-48ae-4ed9-9001-f4a8fc809829/7d0a749c-48ae-4ed9-9001-f4a8fc809829.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./efa3e28a-e2ae-447d-ab98-048d5533987e/efa3e28a-e2ae-447d-ab98-048d5533987e.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./a65a83d7-c5d9-4c83-b305-3670d0a13ddb/a65a83d7-c5d9-4c83-b305-3670d0a13ddb.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./99263da0-917f-4796-be7c-5152864fd9fd/99263da0-917f-4796-be7c-5152864fd9fd.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./7f6c25c5-f0cb-4bcb-8d80-2e9f5b8c77e2/7f6c25c5-f0cb-4bcb-8d80-2e9f5b8c77e2.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./67661371-84ca-4e0a-a630-b4bc41316d12/67661371-84ca-4e0a-a630-b4bc41316d12.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./71970549-e3ca-45ba-bc55-565127874e09/71970549-e3ca-45ba-bc55-565127874e09.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./2512b736-0b1a-4058-b250-7b16db7a674a/2512b736-0b1a-4058-b250-7b16db7a674a.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./70887821-7c00-4d2f-8312-f779d57eff92/70887821-7c00-4d2f-8312-f779d57eff92.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./3bd64b68-fb94-4bf1-8acf-e00fa775f6c8/3bd64b68-fb94-4bf1-8acf-e00fa775f6c8.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./85836d27-862f-4bac-99a6-c7c018f4e581/85836d27-862f-4bac-99a6-c7c018f4e581.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./c05b7cdd-d3d0-44d7-8fa6-8581f37c1237/c05b7cdd-d3d0-44d7-8fa6-8581f37c1237.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./509a63e7-976b-4a53-9aac-9b92951f25f9/509a63e7-976b-4a53-9aac-9b92951f25f9.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./35949291-c678-402e-9e37-1a689b967ae1/35949291-c678-402e-9e37-1a689b967ae1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./6837eb88-f265-4470-bf6f-9d20793d710c/6837eb88-f265-4470-bf6f-9d20793d710c.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./8f7e3c85-89c1-43ad-a105-501ec2941798/8f7e3c85-89c1-43ad-a105-501ec2941798.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./71b3b25f-50c6-4f77-a87a-c99d7f9e57ff/71b3b25f-50c6-4f77-a87a-c99d7f9e57ff.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./d2519fc4-1d86-48dc-a2b6-13a99210bc6c/d2519fc4-1d86-48dc-a2b6-13a99210bc6c.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./9316ffb0-8f6f-4b73-ae30-0b94a7fd517c/9316ffb0-8f6f-4b73-ae30-0b94a7fd517c.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ae6b41f3-ec3e-4227-94b2-6329fdb26ec2/ae6b41f3-ec3e-4227-94b2-6329fdb26ec2.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./91bf9d02-7726-48a8-a9f6-c5c6290bdc00/91bf9d02-7726-48a8-a9f6-c5c6290bdc00.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./eaf23140-8e29-4a89-9787-2b9916326575/eaf23140-8e29-4a89-9787-2b9916326575.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./65d5dbdf-5acc-4087-ba96-bfc2e1398548/65d5dbdf-5acc-4087-ba96-bfc2e1398548.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./dced6a49-d2d0-4d6c-a623-e992b086a410/dced6a49-d2d0-4d6c-a623-e992b086a410.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./4e74f140-86a9-4f0c-88ef-ec59494b12ad/4e74f140-86a9-4f0c-88ef-ec59494b12ad.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./7d7a68b7-8343-4b80-8bd8-4945d6c7e9c5/7d7a68b7-8343-4b80-8bd8-4945d6c7e9c5.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./d76ff5c3-c775-4cd9-bf24-b964b09ec270/d76ff5c3-c775-4cd9-bf24-b964b09ec270.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./9ba3a3b0-b825-4add-a133-46c98cb0f048/9ba3a3b0-b825-4add-a133-46c98cb0f048.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./08ecd260-7842-4b30-9abf-f361f457de52/08ecd260-7842-4b30-9abf-f361f457de52.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./c544dcce-4250-4ae8-b4a5-dc6cb5ce79d0/c544dcce-4250-4ae8-b4a5-dc6cb5ce79d0.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./944f747d-a110-4bed-a64e-0ff3c4a5f2b3/944f747d-a110-4bed-a64e-0ff3c4a5f2b3.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./7d5afa95-994f-4049-8134-39eabc312c54/7d5afa95-994f-4049-8134-39eabc312c54.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./2c55a092-6ef6-4864-9298-eedcbcdb9b35/2c55a092-6ef6-4864-9298-eedcbcdb9b35.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./b363c519-c92f-42eb-8d0b-6414d1f6e6d8/b363c519-c92f-42eb-8d0b-6414d1f6e6d8.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./87b9309c-5f29-4f76-b473-8767aec246a4/87b9309c-5f29-4f76-b473-8767aec246a4.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ed9db1b3-442a-4443-8af5-826c1b3cb145/ed9db1b3-442a-4443-8af5-826c1b3cb145.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./2a875c96-7ea8-4fd6-8e58-473eb92c337d/2a875c96-7ea8-4fd6-8e58-473eb92c337d.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./37614dd0-586f-4f68-8fb0-03e7bd401397/37614dd0-586f-4f68-8fb0-03e7bd401397.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./e9112cfd-c964-42f4-8095-a4788e7cea5e/e9112cfd-c964-42f4-8095-a4788e7cea5e.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./94a818eb-8837-43a7-8a20-5d5ed97298ec/94a818eb-8837-43a7-8a20-5d5ed97298ec.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./86ce70cf-2c62-4597-aa1b-d0ca1e55dbf2/86ce70cf-2c62-4597-aa1b-d0ca1e55dbf2.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./524cf37d-d587-4105-8c6d-5e6774eb981a/524cf37d-d587-4105-8c6d-5e6774eb981a.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./9b2d58f4-7872-4377-8df6-a7132fa06d9d/9b2d58f4-7872-4377-8df6-a7132fa06d9d.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./94074926-faef-465a-81f8-3a436123dff0/94074926-faef-465a-81f8-3a436123dff0.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./7c60faa1-4724-485a-8527-88a23664cd99/7c60faa1-4724-485a-8527-88a23664cd99.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./d0b1ee35-b326-498a-bcc6-505f800a7fe7/d0b1ee35-b326-498a-bcc6-505f800a7fe7.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./3a3e05a2-8a66-45d9-9007-bbbcc039bc02/3a3e05a2-8a66-45d9-9007-bbbcc039bc02.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ac63dc50-4370-4e6a-b4b1-af12356f7b58/ac63dc50-4370-4e6a-b4b1-af12356f7b58.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./c612499b-753e-4ea0-8161-42636690fbe1/c612499b-753e-4ea0-8161-42636690fbe1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./4f7c7a84-2993-40d8-90cf-b2833a98bfa3/4f7c7a84-2993-40d8-90cf-b2833a98bfa3.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./c935a925-c207-442c-a3b6-a8c84947bd9f/c935a925-c207-442c-a3b6-a8c84947bd9f.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./8f76ec28-3808-442c-a57b-5a8f11c28606/8f76ec28-3808-442c-a57b-5a8f11c28606.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./d87edd73-3b77-44db-98ce-d324af79d9a3/d87edd73-3b77-44db-98ce-d324af79d9a3.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./805e36de-e63e-4d41-a185-00407a745ab0/805e36de-e63e-4d41-a185-00407a745ab0.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./b7edc1a2-feac-4f1f-8b69-02f0ea0fd4d5/b7edc1a2-feac-4f1f-8b69-02f0ea0fd4d5.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./940e15d7-e1e6-40e4-92c7-2cdb3c4fe1bb/940e15d7-e1e6-40e4-92c7-2cdb3c4fe1bb.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./5001e0d7-d222-4a25-9454-e56d9cb28d74/5001e0d7-d222-4a25-9454-e56d9cb28d74.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./71dd56a1-d292-4ced-bb83-7e1ae55a1de8/71dd56a1-d292-4ced-bb83-7e1ae55a1de8.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./1f9f2c82-e256-4a5f-b9d3-595033850142/1f9f2c82-e256-4a5f-b9d3-595033850142.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./de5de7da-8b51-415e-a15c-e88acd77bb7d/de5de7da-8b51-415e-a15c-e88acd77bb7d.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./bc48302f-bdd0-4a4f-a68f-3ecb8da7aadc/bc48302f-bdd0-4a4f-a68f-3ecb8da7aadc.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./8416f5f0-63c6-417d-a266-f48022225eed/8416f5f0-63c6-417d-a266-f48022225eed.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./1a273aa3-e48a-4dbb-bdac-fd77e8e52e04/1a273aa3-e48a-4dbb-bdac-fd77e8e52e04.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./566ce294-7228-40a3-95f4-858acd8b28b8/566ce294-7228-40a3-95f4-858acd8b28b8.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./9a9eabd3-859c-4fb8-8e75-ce592f13d51a/9a9eabd3-859c-4fb8-8e75-ce592f13d51a.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./9bdd3536-9f23-41e5-9b68-a0a3e173cdcf/9bdd3536-9f23-41e5-9b68-a0a3e173cdcf.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./28f0990e-3413-49cc-8772-3c4fa0c00796/28f0990e-3413-49cc-8772-3c4fa0c00796.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./099b55ce-c341-4135-87e3-400dc1427984/099b55ce-c341-4135-87e3-400dc1427984.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./53b7d997-4d72-4187-8f2d-20584ec8db5d/53b7d997-4d72-4187-8f2d-20584ec8db5d.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./785f6e9f-2e36-462a-8b5c-54072c834529/785f6e9f-2e36-462a-8b5c-54072c834529.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./4d65bea3-796a-4df0-8806-ab849b50f1a0/4d65bea3-796a-4df0-8806-ab849b50f1a0.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./a10c68b5-2c1d-45f3-823f-6bdd43755726/a10c68b5-2c1d-45f3-823f-6bdd43755726.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./836c3a54-1fad-4ee7-8be0-7c0434cd7e06/836c3a54-1fad-4ee7-8be0-7c0434cd7e06.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./b0ce3012-e772-4b6b-89a1-cbda84abbe32/b0ce3012-e772-4b6b-89a1-cbda84abbe32.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./42c90bb1-a1b1-4a32-b234-b69bb1048c50/42c90bb1-a1b1-4a32-b234-b69bb1048c50.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./6bfee78d-31d8-4f39-b828-5ed7ce81fbf1/6bfee78d-31d8-4f39-b828-5ed7ce81fbf1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./7de1d255-128d-4806-a279-96c46b8447d0/7de1d255-128d-4806-a279-96c46b8447d0.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./f10faf6c-63d3-4709-ac28-d545b8299458/f10faf6c-63d3-4709-ac28-d545b8299458.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./fb73a7cf-3b30-4a0c-a8f4-c6ec17ed63ab/fb73a7cf-3b30-4a0c-a8f4-c6ec17ed63ab.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./5509c066-e079-4b00-8318-a006a96ca92b/5509c066-e079-4b00-8318-a006a96ca92b.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./3153800a-c635-41e6-8f56-ec92b58006bd/3153800a-c635-41e6-8f56-ec92b58006bd.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./e8980e75-63ea-4a12-ab76-cafec0de776d/e8980e75-63ea-4a12-ab76-cafec0de776d.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./4e0f9a53-f3a5-4982-9324-7cd820185eb4/4e0f9a53-f3a5-4982-9324-7cd820185eb4.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./c4484586-8f81-441a-a01b-2ee009fb83b1/c4484586-8f81-441a-a01b-2ee009fb83b1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./eb4c41f7-3313-48be-8b83-8477ba1c4e52/eb4c41f7-3313-48be-8b83-8477ba1c4e52.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./36f7e31c-6aa7-447e-a7a9-e86a1238b720/36f7e31c-6aa7-447e-a7a9-e86a1238b720.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./748bbe3d-dc24-4ee5-83a1-05c3f9f4e048/748bbe3d-dc24-4ee5-83a1-05c3f9f4e048.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./3b3dcf55-4faa-4dbe-8c90-9bdaccdf3bae/3b3dcf55-4faa-4dbe-8c90-9bdaccdf3bae.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./a7591563-aa85-417d-8eeb-337aadb000fd/a7591563-aa85-417d-8eeb-337aadb000fd.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./bcd19d11-f5e1-446a-a5c3-1be877202568/bcd19d11-f5e1-446a-a5c3-1be877202568.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./5210f441-3d8e-4a8f-b717-324b5dfa9620/5210f441-3d8e-4a8f-b717-324b5dfa9620.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./f8ffc51d-ab57-4c4c-8a38-860ea1ed7e90/f8ffc51d-ab57-4c4c-8a38-860ea1ed7e90.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./67f97eb9-1a6b-4f69-846b-7fbdfb23cfdc/67f97eb9-1a6b-4f69-846b-7fbdfb23cfdc.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./07c47ead-981c-41e9-b5e1-84f7ebc1282d/07c47ead-981c-41e9-b5e1-84f7ebc1282d.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20a6d937-23c5-4ce6-b4e7-a2274eb4eeb8/20a6d937-23c5-4ce6-b4e7-a2274eb4eeb8.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./a6742c8e-e77d-4cda-a036-2ed2f6468a44/a6742c8e-e77d-4cda-a036-2ed2f6468a44.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./9657ad3f-5e43-4dde-b1ba-b7c045848231/9657ad3f-5e43-4dde-b1ba-b7c045848231.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./95ac1b32-d726-4516-bd35-65280ea865e9/95ac1b32-d726-4516-bd35-65280ea865e9.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./3ad895d4-8f07-451e-8d9d-fe558fe7cdfa/3ad895d4-8f07-451e-8d9d-fe558fe7cdfa.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./da434141-1d31-4a67-add1-f49c3d1f1851/da434141-1d31-4a67-add1-f49c3d1f1851.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./5227d406-0481-477e-b727-025866013f50/5227d406-0481-477e-b727-025866013f50.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./56a5520e-c6c0-4c8f-86a8-af4bc03b3fa9/56a5520e-c6c0-4c8f-86a8-af4bc03b3fa9.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./c7f2ebe0-92f7-4347-95d2-03741ef081a5/c7f2ebe0-92f7-4347-95d2-03741ef081a5.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ecb27764-c599-4386-b5fe-6f4918ac3ef4/ecb27764-c599-4386-b5fe-6f4918ac3ef4.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./97ab0819-9343-4074-9831-8cd5243ffbd0/97ab0819-9343-4074-9831-8cd5243ffbd0.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./38bf54aa-6042-4c00-9bd9-2fd2bd386467/38bf54aa-6042-4c00-9bd9-2fd2bd386467.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./bd2d2ee9-b850-4573-8e98-1c58fbfb779e/bd2d2ee9-b850-4573-8e98-1c58fbfb779e.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./78e71b23-61c3-4e72-9820-780d21b4d477/78e71b23-61c3-4e72-9820-780d21b4d477.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./e1086f89-f5fb-4b18-aa11-7a715fb377d5/e1086f89-f5fb-4b18-aa11-7a715fb377d5.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ec812540-fcc9-4c34-a228-84220a21394b/ec812540-fcc9-4c34-a228-84220a21394b.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./b7cb4f0f-9f69-408e-a0c1-4b10ce7668df/b7cb4f0f-9f69-408e-a0c1-4b10ce7668df.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./0eb2ef0c-83e9-4b2f-85aa-4a3def631034/0eb2ef0c-83e9-4b2f-85aa-4a3def631034.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./15bb6aa7-f0bf-40fe-9adc-4c29233417a5/15bb6aa7-f0bf-40fe-9adc-4c29233417a5.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./025e3f9f-4334-4580-88c8-c576698441ee/025e3f9f-4334-4580-88c8-c576698441ee.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./dcf160a1-1780-463a-87c6-04f92597a50f/dcf160a1-1780-463a-87c6-04f92597a50f.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./a9a0e47d-083f-4885-a552-65ba7e0a8355/a9a0e47d-083f-4885-a552-65ba7e0a8355.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./9c97b3ff-25be-4e6b-8d54-9bc53509f734/9c97b3ff-25be-4e6b-8d54-9bc53509f734.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./518e5f97-a6ea-4648-a7f4-46399fd36495/518e5f97-a6ea-4648-a7f4-46399fd36495.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./c044e0fe-7398-44a5-b975-f779bd053e37/c044e0fe-7398-44a5-b975-f779bd053e37.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./61499414-9817-4f1c-9eb9-243084905b49/61499414-9817-4f1c-9eb9-243084905b49.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./47bc23bc-4944-4160-b23c-33aa2f799596/47bc23bc-4944-4160-b23c-33aa2f799596.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./1f63a3e0-17ef-41c2-83ad-a223598e5880/1f63a3e0-17ef-41c2-83ad-a223598e5880.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./2a2833f9-52ef-474e-af1a-87868fe7e0b0/2a2833f9-52ef-474e-af1a-87868fe7e0b0.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./6ec46f18-86a4-441a-a463-22ab865026ea/6ec46f18-86a4-441a-a463-22ab865026ea.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./7f2facc5-cb84-46c1-b47b-bf997eb3c411/7f2facc5-cb84-46c1-b47b-bf997eb3c411.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./58ec9a8d-d3a6-4cda-8d2e-c6604f911fc8/58ec9a8d-d3a6-4cda-8d2e-c6604f911fc8.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./d158db1c-7f8d-4c40-b6e0-b80d5daf68b9/d158db1c-7f8d-4c40-b6e0-b80d5daf68b9.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./7071c0ea-1fba-437b-a069-9b169ea0a36b/7071c0ea-1fba-437b-a069-9b169ea0a36b.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./aaa5c422-0485-4eb9-9500-13cd80bc9897/aaa5c422-0485-4eb9-9500-13cd80bc9897.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./e99bbb2e-1d36-402e-82b3-be8ad1a68f60/e99bbb2e-1d36-402e-82b3-be8ad1a68f60.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./c91194e4-9638-485d-9336-044fa05e3dc1/c91194e4-9638-485d-9336-044fa05e3dc1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./c7135a2a-c9cf-4e90-8e67-dd209d96177e/c7135a2a-c9cf-4e90-8e67-dd209d96177e.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./229ee1ba-752c-4e35-8893-35f2dadde1fd/229ee1ba-752c-4e35-8893-35f2dadde1fd.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./f2153d56-0eb0-458a-8988-979f552191e5/f2153d56-0eb0-458a-8988-979f552191e5.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./b13b5a9a-7bc5-4873-9c0b-296cdef58b51/b13b5a9a-7bc5-4873-9c0b-296cdef58b51.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./d8c6455b-199e-4bde-9b00-1bbfde6b66c5/d8c6455b-199e-4bde-9b00-1bbfde6b66c5.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./289d6656-1ba5-434b-bc59-2508fa6a871c/289d6656-1ba5-434b-bc59-2508fa6a871c.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./707fa710-3426-47b6-8242-d81b5c7ff16f/707fa710-3426-47b6-8242-d81b5c7ff16f.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./4501d755-2d98-442f-a739-3ad68fe5e3c9/4501d755-2d98-442f-a739-3ad68fe5e3c9.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./38ad37fb-5e40-4b6e-9571-54f7e69dae68/38ad37fb-5e40-4b6e-9571-54f7e69dae68.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./45328fb4-6618-4f5b-8877-8c7133409349/45328fb4-6618-4f5b-8877-8c7133409349.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ab0a67ae-72d0-4608-9e73-9bfd07a6b2e6/ab0a67ae-72d0-4608-9e73-9bfd07a6b2e6.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./ce286f50-a841-4d9a-8a7a-54ae85c3aff1/ce286f50-a841-4d9a-8a7a-54ae85c3aff1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./e022c48b-7374-48bd-953b-39fd96e08eb8/e022c48b-7374-48bd-953b-39fd96e08eb8.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./41215873-ff67-4690-b34c-a898037865dd/41215873-ff67-4690-b34c-a898037865dd.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./6dde8c3e-a53a-49d9-ac48-e250df4a555f/6dde8c3e-a53a-49d9-ac48-e250df4a555f.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./49e18f0b-842c-4905-a3eb-cc24a5e028e0/49e18f0b-842c-4905-a3eb-cc24a5e028e0.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./192f767c-20f8-4b42-8ea2-d1f60fdaace1/192f767c-20f8-4b42-8ea2-d1f60fdaace1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "/Users/scotthenderson/GitHub/huskysar/umbra/stacbrowse/panama-canal/catalog.json",
+      "type": "application/json"
+    }
+  ]
+}
