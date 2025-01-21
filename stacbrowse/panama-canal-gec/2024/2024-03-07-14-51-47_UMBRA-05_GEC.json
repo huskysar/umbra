@@ -154,10 +154,10 @@
     "huskysar:scene_size": "5x5_KM",
     "umbra:processor": null,
     "huskysar:rpcs": true,
-    "updated": "2024-03-07T16:44:42.468416Z",
-    "end_datetime": "2024-03-07T14:51:57.674213Z",
     "start_datetime": "2024-03-07T14:51:48.000000Z",
-    "created": "2024-03-07T16:44:42.468408Z"
+    "created": "2024-03-07T16:44:42.468408Z",
+    "updated": "2024-03-07T16:44:42.468416Z",
+    "end_datetime": "2024-03-07T14:51:57.674213Z"
   },
   "links": [
     {
@@ -173,7 +173,7 @@
   ],
   "assets": {
     "gec": {
-      "href": "https://umbra-open-data-catalog.s3.amazonaws.com/sar-data/tasks/Panama%20Canal%2C%20Panama/37a164a1-8119-47a4-a06d-b2f775f90cdf/2024-03-07-14-51-47_UMBRA-05/2024-03-07-14-51-47_UMBRA-05_GEC.tif",
+      "href": "https://umbra-open-data-catalog.s3.amazonaws.com/sar-data/tasks/Panama+Canal,+Panama/37a164a1-8119-47a4-a06d-b2f775f90cdf/2024-03-07-14-51-47_UMBRA-05/2024-03-07-14-51-47_UMBRA-05_GEC.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "raster:bands": [
         {
