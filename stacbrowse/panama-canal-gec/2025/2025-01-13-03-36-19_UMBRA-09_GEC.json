@@ -1,0 +1,215 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
+  "id": "2025-01-13-03-36-19_UMBRA-09_GEC",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -79.60429181215505,
+          8.950889800680791
+        ],
+        [
+          -79.55847377933229,
+          8.950889800680791
+        ],
+        [
+          -79.55847377933229,
+          8.99644461237005
+        ],
+        [
+          -79.60429181215505,
+          8.99644461237005
+        ],
+        [
+          -79.60429181215505,
+          8.950889800680791
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -79.60429181215505,
+    8.950889800680791,
+    -79.55847377933229,
+    8.99644461237005
+  ],
+  "properties": {
+    "proj:epsg": 4326,
+    "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -79.60429181215505,
+            8.950889800680791
+          ],
+          [
+            -79.55847377933229,
+            8.950889800680791
+          ],
+          [
+            -79.55847377933229,
+            8.99644461237005
+          ],
+          [
+            -79.60429181215505,
+            8.99644461237005
+          ],
+          [
+            -79.60429181215505,
+            8.950889800680791
+          ]
+        ]
+      ]
+    },
+    "proj:bbox": [
+      -79.60429181215505,
+      8.950889800680791,
+      -79.55847377933229,
+      8.99644461237005
+    ],
+    "proj:shape": [
+      32001,
+      32001
+    ],
+    "proj:transform": [
+      -1.0918884814595701e-8,
+      -1.4208498981225455e-6,
+      -79.55847377933229,
+      -1.41268722112083e-6,
+      1.0856158437871452e-8,
+      8.99609720444388,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "proj:projjson": {
+      "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",
+      "type": "GeographicCRS",
+      "name": "WGS 84",
+      "datum": {
+        "type": "GeodeticReferenceFrame",
+        "name": "World Geodetic System 1984",
+        "ellipsoid": {
+          "name": "WGS 84",
+          "semi_major_axis": 6378137,
+          "inverse_flattening": 298.257223563
+        }
+      },
+      "coordinate_system": {
+        "subtype": "ellipsoidal",
+        "axis": [
+          {
+            "name": "Geodetic latitude",
+            "abbreviation": "Lat",
+            "direction": "north",
+            "unit": "degree"
+          },
+          {
+            "name": "Geodetic longitude",
+            "abbreviation": "Lon",
+            "direction": "east",
+            "unit": "degree"
+          }
+        ]
+      },
+      "id": {
+        "authority": "EPSG",
+        "code": 4326
+      }
+    },
+    "datetime": null,
+    "platform": "Umbra-09",
+    "sar:frequency_band": "X",
+    "sar:instrument_mode": "SPOTLIGHT",
+    "sar:looks_azimuth": 2,
+    "sar:polarizations": [
+      "VV"
+    ],
+    "sar:product_type": "GEC",
+    "sar:resolution_azimuth": 0.125,
+    "sar:resolution_range": 0.25,
+    "umbra:collect_ids": [
+      "874056c3-055c-475a-b005-4a9d71fcef30"
+    ],
+    "umbra:grazing_angle_degrees": 46.21551513671875,
+    "umbra:open-data-catalog": true,
+    "umbra:slant_range_kilometers": 758.88818359375,
+    "umbra:squint_angle_degrees": 160.42578125,
+    "umbra:squint_angle_degrees_off_broadside": 19.57422637939453,
+    "umbra:squint_angle_engineering_degrees": -70.42577362060547,
+    "umbra:squint_angle_exploitation_degrees": 19.57422637939453,
+    "umbra:target_azimuth_angle_degrees": 97.39791107177734,
+    "umbra:task_id": "bfe9e972-3bf2-4da4-b9f2-24fd8f54d157",
+    "view:incidence_angle": 43.78448486328125,
+    "sar:observation_direction": "left",
+    "sat:orbit_state": "ascending",
+    "umbra:processor": "4.6.2",
+    "huskysar:hasrpcs": true,
+    "huskysar:scene_size": "5x5_KM",
+    "created": "2025-01-14T09:14:54.682994Z",
+    "updated": "2025-01-14T09:14:54.682999Z",
+    "start_datetime": "2025-01-13T03:36:20.000000Z",
+    "end_datetime": "2025-01-13T03:36:34.218407Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "gec": {
+      "href": "http://umbra-open-data-catalog.s3.amazonaws.com/sar-data/tasks/Panama%20Canal%2C%20Panama/bfe9e972-3bf2-4da4-b9f2-24fd8f54d157/2025-01-13-03-36-19_UMBRA-09/2025-01-13-03-36-19_UMBRA-09_GEC.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "raster:bands": [
+        {
+          "data_type": "uint8",
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "nodata": 0.0,
+          "statistics": {
+            "mean": 22.42548370361328,
+            "minimum": 3,
+            "maximum": 214,
+            "stddev": 13.473563538978185,
+            "valid_percent": 100.0
+          },
+          "histogram": {
+            "count": 11,
+            "min": 3.0,
+            "max": 214.0,
+            "buckets": [
+              718174,
+              271946,
+              44932,
+              8040,
+              3325,
+              1441,
+              501,
+              172,
+              35,
+              10
+            ]
+          }
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    }
+  }
+}
