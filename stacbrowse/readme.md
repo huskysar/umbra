@@ -26,6 +26,7 @@ We'll retrieve this by actually reading TIFs & Metadata JSONs for each item
 "sar:center_frequency": float # Hz
 "umbra:sceneSize": "5x5_KM" # or 4x4KM
 "huskysar:duration": float # s
+"huskysar:rpcs": bool # weather or not RPCs in TIFs
 "huskysar:dayofyear: int # day
 "processing:software": {
     "Umbra SAR Processor": "2.61.0" # example
@@ -42,3 +43,5 @@ https://raw.githubusercontent.com/huskysar/umbra/main/stacbrowse/panama-canal/ca
 Like this!
 https://radiantearth.github.io/stac-browser/#/external/raw.githubusercontent.com/huskysar/umbra/main/stacbrowse/panama-canal/catalog.json
 
+Or this (our own stacbrowser w/ titiler for rendering instead of geotiff.js)
+https://relativeorbit.github.io/stac-browser/#/external/raw.githubusercontent.com/huskysar/umbra/main/stacbrowse/panama-canal-gec/catalog.json

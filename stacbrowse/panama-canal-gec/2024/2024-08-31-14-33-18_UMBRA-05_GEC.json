@@ -148,15 +148,16 @@
     "umbra:target_azimuth_angle_degrees": 51.35721206665039,
     "umbra:task_id": "4d5f4dce-7784-49f7-b1c9-3565e80b8d93",
     "view:incidence_angle": 23.812583923339844,
+    "huskysar:duration": 7,
     "sar:observation_direction": "right",
     "sat:orbit_state": "descending",
-    "umbra:processor": "3.48.10",
-    "huskysar:hasrpcs": true,
     "huskysar:scene_size": "5x5_KM",
-    "created": "2024-08-31T22:59:59.244184Z",
+    "umbra:processor": "3.48.10",
+    "huskysar:rpcs": true,
     "updated": "2024-08-31T22:59:59.244190Z",
+    "end_datetime": "2024-08-31T14:33:26.375937Z",
     "start_datetime": "2024-08-31T14:33:19.000000Z",
-    "end_datetime": "2024-08-31T14:33:26.375937Z"
+    "created": "2024-08-31T22:59:59.244184Z"
   },
   "links": [
     {
@@ -172,7 +173,7 @@
   ],
   "assets": {
     "gec": {
-      "href": "http://umbra-open-data-catalog.s3.amazonaws.com/sar-data/tasks/Panama%20Canal%2C%20Panama/4d5f4dce-7784-49f7-b1c9-3565e80b8d93/2024-08-31-14-33-18_UMBRA-05/2024-08-31-14-33-18_UMBRA-05_GEC.tif",
+      "href": "https://umbra-open-data-catalog.s3.amazonaws.com/sar-data/tasks/Panama%20Canal%2C%20Panama/4d5f4dce-7784-49f7-b1c9-3565e80b8d93/2024-08-31-14-33-18_UMBRA-05/2024-08-31-14-33-18_UMBRA-05_GEC.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "raster:bands": [
         {
