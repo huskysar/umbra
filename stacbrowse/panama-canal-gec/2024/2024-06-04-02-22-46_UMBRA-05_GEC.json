@@ -2,7 +2,6 @@
   "type": "Feature",
   "stac_version": "1.0.0",
   "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
     "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
   ],
   "id": "2024-06-04-02-22-46_UMBRA-05_GEC",
@@ -40,90 +39,6 @@
     9.001741058856823
   ],
   "properties": {
-    "proj:epsg": 4326,
-    "proj:geometry": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [
-            -79.60961886094248,
-            8.945593354282952
-          ],
-          [
-            -79.55314673054475,
-            8.945593354282952
-          ],
-          [
-            -79.55314673054475,
-            9.001741058856823
-          ],
-          [
-            -79.60961886094248,
-            9.001741058856823
-          ],
-          [
-            -79.60961886094248,
-            8.945593354282952
-          ]
-        ]
-      ]
-    },
-    "proj:bbox": [
-      -79.60961886094248,
-      8.945593354282952,
-      -79.55314673054475,
-      9.001741058856823
-    ],
-    "proj:shape": [
-      16001,
-      16001
-    ],
-    "proj:transform": [
-      8.034468678769096e-7,
-      -2.7258407015078216e-6,
-      -79.56600268387766,
-      -2.7101809774132545e-6,
-      -7.988312451896896e-7,
-      9.001741058856823,
-      0.0,
-      0.0,
-      1.0
-    ],
-    "proj:projjson": {
-      "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",
-      "type": "GeographicCRS",
-      "name": "WGS 84",
-      "datum": {
-        "type": "GeodeticReferenceFrame",
-        "name": "World Geodetic System 1984",
-        "ellipsoid": {
-          "name": "WGS 84",
-          "semi_major_axis": 6378137,
-          "inverse_flattening": 298.257223563
-        }
-      },
-      "coordinate_system": {
-        "subtype": "ellipsoidal",
-        "axis": [
-          {
-            "name": "Geodetic latitude",
-            "abbreviation": "Lat",
-            "direction": "north",
-            "unit": "degree"
-          },
-          {
-            "name": "Geodetic longitude",
-            "abbreviation": "Lon",
-            "direction": "east",
-            "unit": "degree"
-          }
-        ]
-      },
-      "id": {
-        "authority": "EPSG",
-        "code": 4326
-      }
-    },
     "datetime": null,
     "platform": "Umbra-05",
     "sar:frequency_band": "X",
@@ -154,10 +69,10 @@
     "huskysar:scene_size": "5x5_KM",
     "umbra:processor": "3.44.3",
     "huskysar:rpcs": true,
-    "created": "2024-06-04T12:51:49.835389Z",
-    "end_datetime": "2024-06-04T02:22:52.145412Z",
     "start_datetime": "2024-06-04T02:22:47.000000Z",
-    "updated": "2024-06-04T12:51:49.835393Z"
+    "updated": "2024-06-04T12:51:49.835393Z",
+    "created": "2024-06-04T12:51:49.835389Z",
+    "end_datetime": "2024-06-04T02:22:52.145412Z"
   },
   "links": [
     {
