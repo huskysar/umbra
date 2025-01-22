@@ -154,10 +154,10 @@
     "huskysar:scene_size": "5x5_KM",
     "umbra:processor": "4.6.2",
     "huskysar:rpcs": true,
-    "start_datetime": "2025-01-12T03:35:19.000000Z",
     "created": "2025-01-13T02:46:10.317781Z",
-    "updated": "2025-01-13T02:46:10.317786Z",
-    "end_datetime": "2025-01-12T03:35:33.090062Z"
+    "end_datetime": "2025-01-12T03:35:33.090062Z",
+    "start_datetime": "2025-01-12T03:35:19.000000Z",
+    "updated": "2025-01-13T02:46:10.317786Z"
   },
   "links": [
     {

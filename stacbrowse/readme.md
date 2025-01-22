@@ -45,3 +45,33 @@ https://radiantearth.github.io/stac-browser/#/external/raw.githubusercontent.com
 
 Or this (our own stacbrowser w/ titiler for rendering instead of geotiff.js)
 https://relativeorbit.github.io/stac-browser/#/external/raw.githubusercontent.com/huskysar/umbra/main/stacbrowse/panama-canal-gec/catalog.json
+
+Browse commit
+https://relativeorbit.github.io/stac-browser/#/external/raw.githubusercontent.com/huskysar/umbra/0dfc3ac0578ef89c72df13cfeb5ca38c2ccbc469/stacbrowse/panama-canal-gec/catalog.json
+
+
+
+# Troubleshoot titile woahs
+
+http://umbra-open-data-catalog.s3.amazonaws.com/sar-data/tasks/Panama Canal, Panama/fac35699-2f8d-4c28-ab5e-638182373f34/2024-02-17-15-00-05_UMBRA-04/2024-02-17-15-00-05_UMBRA-04_GEC.tif
+
+http://umbra-open-data-catalog.s3.amazonaws.com/sar-data/tasks/Panama%20Canal%2C%20Panama/fac35699-2f8d-4c28-ab5e-638182373f34/2024-02-17-15-00-05_UMBRA-04/2024-02-17-15-00-05_UMBRA-04_GEC.tif
+
+https://titiler.xyz/cog/WebMercatorQuad/map?tile_scale=1&url=http%3A%2F%2Fumbra-open-data-catalog.s3.amazonaws.com%2Fsar-data%2Ftasks%2FPanama%2520Canal%252C%2520Panama%2Ffac35699-2f8d-4c28-ab5e-638182373f34%2F2024-02-17-15-00-05_UMBRA-04%2F2024-02-17-15-00-05_UMBRA-04_GEC.tif
+
+-> requests that look like this:
+
+https://titiler.xyz/cog/tiles/WebMercatorQuad/13/2284/3890@1x?url=http%3A%2F%2Fumbra-open-data-catalog.s3.amazonaws.com%2Fsar-data%2Ftasks%2FPanama%2520Canal%252C%2520Panama%2Ffac35699-2f8d-4c28-ab5e-638182373f34%2F2024-02-17-15-00-05_UMBRA-04%2F2024-02-17-15-00-05_UMBRA-04_GEC.tif
+
+
+https://titiler.xyz/cog/tiles/WebMercatorQuad/13/2284/3890@1x?url=http%3A%2F%2Fumbra-open-data-catalog.s3.amazonaws.com%2Fsar-data%2Ftasks%2FPanama%20Canal%2C%20Panama%2Ffac35699-2f8d-4c28-ab5e-638182373f34%2F2024-02-17-15-00-05_UMBRA-04%2F2024-02-17-15-00-05_UMBRA-04_GEC.tif
+
+
+Go via URL decode encode
+http%3A%2F%2Fumbra-open-data-catalog.s3.amazonaws.com%2Fsar-data%2Ftasks%2FPanama%20Canal%2C%20Panama%2Ffac35699-2f8d-4c28-ab5e-638182373f34%2F2024-02-17-15-00-05_UMBRA-04%2F2024-02-17-15-00-05_UMBRA-04_GEC.tif
+
+Compare to titiler... hmm whate is %2520 -> %20 which is a spaceT
+http%3A%2F%2Fumbra-open-data-catalog.s3.amazonaws.com%2Fsar-data%2Ftasks%2FPanama%2520Canal%252C%2520Panama%2Ffac35699-2f8d-4c28-ab5e-638182373f34%2F2024-02-17-15-00-05_UMBRA-04%2F2024-02-17-15-00-05_UMBRA-04_GEC.tif
+
+
+https://titiler.xyz/cog/tiles/WebMercatorQuad/13/2284/3890@1x?url=http%3A%2F%2Fumbra-open-data-catalog.s3.amazonaws.com%2Fsar-data%2Ftasks%2FPanama%2520Canal%252C%2520Panama%2Ffac35699-2f8d-4c28-ab5e-638182373f34%2F2024-02-17-15-00-05_UMBRA-04%2F2024-02-17-15-00-05_UMBRA-04_GEC.tif
