@@ -1,9 +1,10 @@
 # UMBRA
 
-Code related to NASA CSDAP [Umbra Space](https://umbra.space) evaluation 
+Code related to NASA CSDAP [Umbra Space](https://umbra.space) evaluation
 
 ## rendered notebooks
 
+1. [Order Summary](https://nbviewer.org/github/huskysar/umbra/blob/main/notebooks/order_summary.ipynb)
 1. [Public Archive Search](https://nbviewer.org/github/huskysar/umbra/blob/main/notebooks/public-archive-search.ipynb)
 1. [Basic Task Submission](https://nbviewer.org/github/huskysar/umbra/blob/main/notebooks/basic-task.ipynb)
 1. [Constrained Task Submission](https://nbviewer.org/github/huskysar/umbra/blob/main/notebooks/constrained-task.ipynb)
