@@ -19,10 +19,10 @@ cd umbra
 pixi install
 ```
 
-Alternatively you can use conda/mamba:
-```
-conda env create -f environment.yml
-```
+## downloading tasked data via API
+
+See [./download/README.md](./download/README.md)
+
 
 ## authentication
 
