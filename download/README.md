@@ -83,9 +83,21 @@ stac-client search $STAC_API_URL \
    | stac-asset download -i "2024-10-28-19-13-59_UMBRA-08_MM.tif" --alternate-assets s3_signed | jq
 ```
 
+or by STAC ID instead of task_id:
+```
+stac-client search $STAC_API_URL \
+   --headers "authorization=Bearer $UMBRA_API_TOKEN" \
+   --ids 19800433-b6f8-40ef-aa9e-7c51f384c638 \
+   | stac-asset download \
+      -p /tmp/2025-03-13-06-17-26_UMBRA-08_MM \
+      -i "2025-03-13-06-17-26_UMBRA-08_MM.tif" \
+      --http-timeout 1200 \
+      --alternate-assets s3_signed | jq
+```
+
+
 #### SICD
 NOTE specifying custom output folder name with -p (otherwise uses STAC Item ID by default)
-
 ```
 stac-client search $STAC_API_URL \
    --headers "authorization=Bearer $UMBRA_API_TOKEN" \
