@@ -8,6 +8,10 @@ version = "0.1.0"
 
 [tasks]
 download = "./scripts/download_umbra.py"
+geocode = "./scripts/geocode_rpc.py"
+download_paradise_gec = "./scripts/download_umbra.py -i paradise.geojson -a GEC -o /Users/scotthenderson/Data/umbra/reprocessed"
+download_utqiagvik_gec = "./scripts/download_umbra.py -i utqiagvik.geojson -a GEC -o /Users/scotthenderson/Data/umbra/utqiagvik"
+geocode_paradise = "./scripts/geocode_rpc.py --data-dir /Users/scotthenderson/Data/umbra/reprocessed/gec --output-dir /Users/scotthenderson/Data/umbra/reprocessed/rpctest"
 
 [dependencies]
 python = ">=3.12,<3.13"
@@ -30,7 +34,8 @@ cartopy = ">=0.24.0,<0.25"
 click = ">=8.1.8,<9"
 # waiting for release
 #stac-geoparquet = ">=0.6.1,<0.7"
-
+# https://github.com/conda-forge/numpy-feedstock/issues/347#issuecomment-2772248255
+libgfortran5 = ">=14"
 
 [pypi-dependencies]
 spacetrack = ">=1.4.0, <2"
